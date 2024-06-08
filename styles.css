@@ -1,0 +1,155 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 40px #9E9E9E);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    background: #EEEEEE;
+    padding: 20px;
+    padding-top: 15vh; /* Добавлен отступ сверху для создания пространства между изображением и текстом */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 0; /* Установлен верхний отступ на ноль */
+}
+
+header h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-size: 5em;
+    color: #ede4a2;
+    text-shadow: 2px 2px 2px rgb(143, 73, 3);
+    opacity: 0;
+    animation: fadeInAnimation 4s forwards;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.invitation p {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-size: 2.5em;
+    margin: 1em 0;
+    opacity: 0;
+    animation: fadeInAnimation 6s forwards;
+}
+
+.invitation .date {
+    font-size: 3em;
+    color: #ede4a2;
+    text-shadow: 2px 2px 2px rgb(169, 85, 0);
+}
+
+.invitation .names {
+    font-size: 7em;
+    color: #ede4a2;
+    margin-top: 0.5em;
+    text-shadow: 2px 2px 2px #9c7a47;
+}
+
+.details {
+    font-family: "Great Vibes", cursive;
+    margin-top: 2em;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInAnimation 8s forwards;
+}
+
+.details h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 3em;
+    color: #464640;
+    margin-bottom: 0.5em;
+}
+
+.details p {
+    font-family: "Great Vibes", cursive;
+    font-size: 2em;
+    color: #464640;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    font-family: "Great Vibes", cursive;
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: #555;
+}
+
+footer a {
+    color: #6b705c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+    .invitation p {
+        font-size: 2em;
+    }
+    .invitation .date {
+        font-size: 2.5em;
+    }
+    .invitation .names {
+        font-size: 4em;
+    }
+    .details h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .invitation p {
+        font-size: 1.5em;
+    }
+    .invitation .date {
+        font-size: 2em;
+    }
+    .invitation .names {
+        font-size: 3em;
+    }
+    .details h2 {
+        font-size: 1.2em;
+    }
+}

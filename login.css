@@ -1,0 +1,68 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    background: url('Pictures/Фон1.jpg') no-repeat center center fixed;
+    background-size: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+}
+
+img.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Медиазапрос для смартфонов */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .form-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .form-container h1 {
+        font-size: 1.5em;
+    }
+
+    .form-container label,
+    .form-container input,
+    .form-container button {
+        font-size: 1em;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .form-container input,
+    .form-container button {
+        padding: 10px;
+    }
+}
